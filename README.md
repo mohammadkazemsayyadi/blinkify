@@ -20,7 +20,7 @@ A lightweight Chrome Extension designed to mitigate computer vision syndrome (di
 ## 🚀 Installation (Developer Mode)
 
 1. Clone this repository to your local machine:
-   `git clone https://github.com/mohammadkazemsayyadi/blinkify`
+   `git clone https://github.com/mohammadkazemsayyadi/blinkify.git`
 2. Open Google Chrome and navigate to `chrome://extensions/`.
 3. Enable **Developer mode** in the top right corner.
 4. Click **Load unpacked** and select the directory containing this repository.
