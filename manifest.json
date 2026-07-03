@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Blinkify: 20-20-20 Eye Care & Break Timer",
+  "version": "1.0",
+  "description": "Protect your vision and prevent eye strain with customizable 20-20-20 rule break reminders and eye exercises.",
+  "permissions": ["alarms", "offscreen", "storage" ,  "notifications"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Blinkify"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
