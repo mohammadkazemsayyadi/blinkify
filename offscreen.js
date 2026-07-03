@@ -6,12 +6,18 @@ let currentObjectUrl = null;
 
 chrome.runtime.onMessage.addListener((msg) => {
   if (msg.action === 'play') {
+<<<<<<< HEAD
     playForDuration(msg.duration, msg.songPath, msg.startTime, msg.volume);
   } else if (msg.action === 'stop') {
     stopPlayback(true);
   }else if (msg.action === 'setVolume') {
     //Allows real-time adjustments while playing
     audio.volume = msg.volume; 
+=======
+    playForDuration(msg.duration, msg.songPath, msg.startTime);
+  } else if (msg.action === 'stop') {
+    stopPlayback(true);
+>>>>>>> d94e2cfb9020f28469d30691b0b80261b25aca89
   }
 });
 
@@ -41,7 +47,11 @@ function getSongFromDB() {
   });
 }
 
+<<<<<<< HEAD
 async function playForDuration(durationMs, songPath, startTime, volume) {
+=======
+async function playForDuration(durationMs, songPath, startTime) {
+>>>>>>> d94e2cfb9020f28469d30691b0b80261b25aca89
   stopPlayback(); 
   
   try {
@@ -82,7 +92,10 @@ async function playForDuration(durationMs, songPath, startTime, volume) {
     }
 
     audio.currentTime = safeStartTime;
+<<<<<<< HEAD
     audio.volume = volume !== undefined ? volume : 0.5;
+=======
+>>>>>>> d94e2cfb9020f28469d30691b0b80261b25aca89
     await audio.play();
 
     stopTimer = setTimeout(() => {
